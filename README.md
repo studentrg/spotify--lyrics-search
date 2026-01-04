@@ -1,29 +1,24 @@
 # 🎵 Spotify Lyric Search using Sentence-BERT
 
-A Machine Learning / NLP project that identifies the **song title and artist** from a **small snippet of lyrics**, using **semantic search with Sentence-BERT**.
+Project Overview
 
-This project is inspired by how platforms like **Spotify** and **Genius** perform lyric-based search.
-
----
+The Spotify Lyric Search project is a text identification system that predicts the song title and artist when provided with a short snippet of lyrics.
+The model is trained on the Spotify 50k+ Songs Dataset using Natural Language Processing (NLP) techniques.
 
 ## 📌 Objective
 
-To build a text-identification system that:
-- Takes a short lyric snippet as input
-- Predicts the most relevant **song name and artist**
-- Uses **semantic understanding**, not just keyword matching
+To build a machine learning model that:
 
----
+Accepts a partial lyric input
+Processes and vectorizes text data
+Identifies the most likely song and artist
+Demonstrates text similarity or classification performance
 
 ## 🧠 Approach
 
-Two approaches were explored:
-1. **TF-IDF + Cosine Similarity** (baseline)
-2. **Sentence-BERT (final implementation)** ✅
 
-The final version uses **Sentence-BERT**, which captures the **meaning of lyrics**, resulting in much higher accuracy.
 
----
+Input lyric snippet → model inference → ranked song matches
 
 ## 🗂️ Dataset
 
@@ -92,3 +87,14 @@ Sample Output
 Correct song ranked at Top-1
 Confidence scores between 0.5 – 0.7 indicate strong semantic matches
 Handles paraphrased or partial lyrics effectively
+
+Future Improvements
+
+Use Word2Vec / BERT embeddings
+Improve accuracy using LSTM / Transformer models
+Add REST API for real-time lyric search
+Deploy as a web application
+
+Author
+Rinki Ghosh
+Btech CSE
